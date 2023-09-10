@@ -42,7 +42,7 @@ jobs:
         run: mvn clean
 
       - name: Prepare build
-        run: mvn clean install -Dproject.build.sourceDirectory=com.example
+#        run: mvn clean install -Dproject.build.sourceDirectory=com.example
         uses: actions/upload-artifact@v3
 
   deploy:
