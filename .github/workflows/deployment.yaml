@@ -44,6 +44,10 @@ jobs:
       - name: Prepare build
 #        run: mvn clean install -Dproject.build.sourceDirectory=com.example
         uses: actions/upload-artifact@v3
+        with:
+          name: my artifact
+          path: artifact
+          retention-days: 5
 
   deploy:
     needs:
